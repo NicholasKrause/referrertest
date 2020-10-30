@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Referrer Test</title>
-  <meta http-equiv="refresh" content="4; URL="http://www.svg-ideas.com/?ref=noJS" />
+  <meta http-equiv="refresh" content="44; URL="http://www.svg-ideas.com/?ref=noJS" />
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height"/>
 </head>
 <body>
-<h1>Loading ...</h1>
+<img src="SVG_home_hero_Carousel_003_550.jpg" alt="Loading ..."
+style="dislpay:fixed;width:100%;top:1px;">
 <script>
 setTimeout( ()=>{
   var sRef = document.referrer;
-console.log( document.referrer );                                                    
+console.log( document.referrer );
+alert( document.referrer );    
   if( sRef ){
     window.location.assign("http://www.svg-ideas.com/?ref=" + sRef);
   }else{
-      window.location.assign("http://www.svg-ideas.com/?ref=none");
+    window.location.assign("http://www.svg-ideas.com/?ref=none");
   }
-},1200);
+},2200);
 </script>
 <body>
