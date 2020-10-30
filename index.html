@@ -10,7 +10,7 @@ setTimeout( ()=>{
   if( sRef ){
     document.location.href = "https://www.svg-ideas.com/?ref=" + sRef;
   }else{
-      document.location.href = "https://www.svg-ideas.com/?ref=none";
+      window.location.assign("https://www.svg-ideas.com/?ref=none");
   }
 },1200);
 </script>
