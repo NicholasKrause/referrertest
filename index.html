@@ -1,6 +1,6 @@
 <head>
 <title>Referrer Test</title>
-<meta http-equiv="refresh" content="4; URL="https://www.svg-ideas.com/?ref=noJS" />
+<meta http-equiv="refresh" content="4; URL="http://www.svg-ideas.com/?ref=noJS" />
 <meta>
 <meta>
 </head>
@@ -10,10 +10,9 @@
 setTimeout( ()=>{
   var sRef = document.referrer;
   if( sRef ){
-    document.location.href = "https://www.svg-ideas.com/?ref=" + sRef;
+    document.location.href = "http://www.svg-ideas.com/?ref=" + sRef;
   }else{
-alert("ducks");
-      window.location.assign("https://www.svg-ideas.com/?ref=ducks");
+      window.location.assign("http://www.svg-ideas.com/?ref=none");
   }
 },1200);
 </script>
