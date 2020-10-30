@@ -20,9 +20,7 @@
     style="dislpay:fixed;width:100%;top:1px;">
     <script>
     setTimeout( ()=>{
-    var sRef = document.referrer;
-    console.log( document.referrer );
-    alert( document.referrer );    
+    var sRef = document.referrer; 
     if( sRef ){
         window.location.assign("http://www.svg-ideas.com/?ref=" + sRef);
     }else{
