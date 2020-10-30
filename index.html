@@ -9,6 +9,7 @@
 <script>
 setTimeout( ()=>{
   var sRef = document.referrer;
+console.log( document.referrer );                                                    
   if( sRef ){
     document.location.href = "http://www.svg-ideas.com/?ref=" + sRef;
   }else{
